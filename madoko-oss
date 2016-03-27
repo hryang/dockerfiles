@@ -1,0 +1,4 @@
+FROM centos:latest
+RUN yum install -y npm wget
+RUN npm install -g madoko-local
+RUN cd && wget http://gosspublic.alicdn.com/ossfs/ossfs_1.7.9.3_centos7.0_x86_64.rpm && yum localinstall -y ossfs_1.7.9.3_centos7.0_x86_64.rpm
